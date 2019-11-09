@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/Background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background"
+        />
+    <ImageView
+        android:id="@+id/TopBun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/topbun"
+        android:layout_marginTop="50dp"
+        />
+
+    <RadioGroup
+        android:id="@+id/RadioGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/TopBun"
+        android:layout_marginTop="20dp"
+        >
+
+        <RadioButton
+            android:id="@+id/Choice1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="#1A99C4"
+            android:text="Beef Burger"
+            android:checked="true"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:id="@+id/Choice2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="#1A99C4"
+            android:layout_weight="1"
+            android:text="Chicken Burger" />
+
+        <RadioButton
+            android:id="@+id/Choice3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="#1A99C4"
+            android:layout_weight="1"
+            android:text="Turkey Burger" />
+    </RadioGroup>
+    <CheckBox
+        android:id="@+id/Checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Caramelized Onions"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/RadioGroup1"
+        ></CheckBox>
+
+    <RadioGroup
+        android:id="@+id/RadioGroup2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/Checkbox"
+        >
+
+        <RadioButton
+            android:id="@+id/Choice4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="#1A99C4"
+            android:text="Cheddar Cheese"
+            android:checked="true"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:id="@+id/Choice5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="#1A99C4"
+            android:layout_weight="1"
+            android:text="Blue Cheese" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/KetcupText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RadioGroup2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="Ketchup Sauce Up To One Teaspoon:"
+        ></TextView>
+    <SeekBar
+        android:id="@+id/Bar"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/KetcupText"
+        android:layout_marginTop="30dp"
+        ></SeekBar>
+
+    <ImageView
+        android:id="@+id/BottomBun"
+        android:layout_width="wrap_content"
+        android:layout_height="130dp"
+        android:layout_below="@+id/Bar"
+        android:background="@drawable/bottombun"
+        android:layout_marginTop="50dp"
+        ></ImageView>
+
+    <TextView
+        android:id="@+id/Calories"
+        android:text=""
+        android:textSize="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/BottomBun"
+        android:layout_marginTop="-70dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        ></TextView>
+</RelativeLayout>
